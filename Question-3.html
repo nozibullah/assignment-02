@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 03
-    </title>
+    <link rel="stylesheet" href="Question-3.css">
+    <title>Question 03</title>
 </head>
 <body>
-    
+    <div class="header"><h1>Cars</h1></div>
+    <div class="gallery-container">
+      <img class="thumbnail" src="https://www.reuters.com/resizer/easy0n87ZNGtAfDZZviIOIH4X6w=/1200x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/XMGMQFEBHBNXHOQQB4UGNH4FOU.jpg" alt="Image 1">
+
+      <img class="thumbnail" src="https://i.pinimg.com/originals/b2/ff/39/b2ff396dda435f346d3ab70e683be555.jpg" alt="Image 2">
+
+      <img class="thumbnail" src="https://cdn.motor1.com/images/mgl/0ee4qV/s3/2022-bmw-7er.jpg" alt="Image 3">
+
+      <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9n6OzfNYo49AFa1Ae2KnE8fHvDwjRJUV6Ew&usqp=CAU" alt="Image 4">
+
+      <img class="thumbnail" src="https://i.gaw.to/content/photos/55/43/554300-mercedes-maybach-une-edition-limitee-inspiree-de-la-haute-couture.jpg" alt="Image 5">
+
+      <img class="thumbnail" src="https://vehicle-images.dealerinspire.com/9542-18003770/4JGFD8KB8PA917456/5faa3dc707f0e990f871a86f91cdcf74.jpg" alt="Image 6">
+
+      <img class="thumbnail" src="https://media.ed.edmunds-media.com/audi/rs-5/2023/oem/2023_audi_rs-5_4dr-hatchback_base_fq_oem_1_600.jpg" alt="Image 7">
+
+      <img class="thumbnail" src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Audi/Q5/10556/1689594416925/front-left-side-47.jpg" alt="Image 8">
+
+      <img class="thumbnail" src="https://d1lhv9gpjooyls.cloudfront.net/eyJvdXRwdXRGb3JtYXQiOiJqcGciLCJidWNrZXQiOiJ6YWxhLXByb2R1Y3Rpb24iLCJrZXkiOiJhY2NvdW50LTE5XC8xNjU4NDg5Mzc5Mzk3XzIyOTc5NzJcL2ltYWdlICgxKS5wbmciLCJlZGl0cyI6eyJyb3RhdGUiOm51bGwsInJlc2l6ZSI6eyJoZWlnaHQiOjEwODAsIndpZHRoIjoxMDgwLCJmaXQiOiJpbnNpZGUiLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX0sImZsYXR0ZW4iOnsiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6bnVsbH19fX0=" alt="Image 9">
+
+      <img class="thumbnail" src="https://www.cnet.com/a/img/resize/6bfeeed3d6991cc15fbe88fe284ad6a0d6cd6c15/hub/2022/08/17/688d6e88-a7eb-4b78-8c8c-1104aed058f9/bentley-mulliner-batur-coupe-ogi-1.jpg?auto=webp&fit=crop&height=675&width=1200" alt="Image 10">
+
+      <img class="thumbnail" src="https://m.atcdn.co.uk/vms/media/86476299ab4442968c639c95505deb0e.jpg" alt="Image 11">
+
+      <img class="thumbnail" src="https://bluesky-cogcms-prodb.cdn.imgeng.in/media/23134/gt-w12.jpg?width=1000&height=660&mode=crop&scale=both&quality=60" alt="Image 12">
+
+      <img class="thumbnail" src="https://hips.hearstapps.com/hmg-prod/images/718-style-edition-18-1667334774.jpg?crop=0.598xw:0.671xh;0.244xw,0.0841xh&resize=640:*" alt="Image 13">
+
+      <img class="thumbnail" src="https://files.porsche.com/filestore/image/multimedia/none/RD-2023-Homepage-Banner-WW-TaycanPush-KW20/normal/c68103e7-ef29-11ed-8103-005056bbdc38;sN;twebp/porsche-normal.webp" alt="Image 14">
+
+      <img class="thumbnail" src="https://img.remediosdigitales.com/6ee5bd/porsche-taycan-mexico_6e/450_1000.jpg" alt="Image 15">
+  
+    <div class="lightbox" id="lightbox">
+      <button class="close-button" onclick="closeLightbox()">&times;</button>
+      <img class="lightbox-content" id="lightbox-img" src="" alt="Full-size Image">
+    </div>
+  </div>
+
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        lightboxImg.src = thumbnail.src;
+        lightbox.classList.add('active');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+    }
+  </script>
 </body>
 </html>

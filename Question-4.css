@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #777778;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/52277759e4b034c78b0ea819/1554137930040-X5Y83OU3873GMURYC6R5/BUILD-LLC-Park-Modern-Night-01.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+  header
+  {
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 2px solid black;
+  }
+
+  .form-container {
+    background-color: #777778;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 25%;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    outline: none;
+  }
+
+  .form-group input[type="submit"] {
+    background-color: #f28b88;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background-color: #ff6863;
+  }
